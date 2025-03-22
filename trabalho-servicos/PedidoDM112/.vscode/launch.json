@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PedidoApp<PedidoDM112>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.inatel.dm112.PedidoApp",
+            "projectName": "PedidoDM112",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
