@@ -53,21 +53,23 @@ Projetos reaproveitados do conteúdo apresentado em aula:
 ### Instruções para acesso
 
 **Métodos GET - Pedidos:**
-[http://localhost:9090/PedidoDM112/api/orders] http://localhost:9090/PedidoDM112/api/orders
-[http://localhost:9090/PedidoDM112/api/orders/1] http://localhost:9090/PedidoDM112/api/orders/1
-[http://localhost:9090/PedidoDM112/api/orders/customer/111.111.111-11] http://localhost:9090/PedidoDM112/api/orders/customer/111.111.111-11
+[http://localhost:9090/PedidoDM112/api/orders]
+[http://localhost:9090/PedidoDM112/api/orders/1]
+[http://localhost:9090/PedidoDM112/api/orders/customer/111.111.111-11]
 
 
 **Método POST para inserir novo Pedido:**
-http://localhost:9090/PedidoDM112/api/orders
-`
+
+URL: http://localhost:9090/PedidoDM112/api/orders
+
+```
 {
 "cpf": "111.111.111-11",
 "value": 1000.0,
 "status": 0,
 "orderDate": 1587158424651
 }
-`
+```
 
 **Métodos PUT para atualizações do Status:**
 http://localhost:9090/PedidoDM112/api/orders/1/pending
@@ -76,9 +78,9 @@ http://localhost:9090/PedidoDM112/api/orders/1/shipped
 http://localhost:9090/PedidoDM112/api/orders/1/delivered
 
 **Métodos GET - Pagamento:**
-[http://localhost:8080/PagamentoDM112/api/startPaymentOfOrder/222.222.222-22/2] http://localhost:8080/PagamentoDM112/api/startPaymentOfOrder/222.222.222-22/2
-[http://localhost:8080/PagamentoDM112/api/confirmPaymentOfOrder/222.222.222-22/2] http://localhost:8080/PagamentoDM112/api/confirmPaymentOfOrder/222.222.222-22/2
+[http://localhost:8080/PagamentoDM112/api/startPaymentOfOrder/222.222.222-22/2]
+[http://localhost:8080/PagamentoDM112/api/confirmPaymentOfOrder/222.222.222-22/2]
 
 **Métodos GET - Entrega:**
-[http://localhost:6060/EntregaDM112/api/startDelivery/222.222.222-22/2] http://localhost:6060/EntregaDM112/api/startDelivery/222.222.222-22/2
-[http://localhost:6060/EntregaDM112/api/confirmDelivery/222.222.222-22/2] http://localhost:6060/EntregaDM112/api/confirmDelivery/222.222.222-22/2 
+[http://localhost:6060/EntregaDM112/api/startDelivery/222.222.222-22/2]
+[http://localhost:6060/EntregaDM112/api/confirmDelivery/222.222.222-22/2]
