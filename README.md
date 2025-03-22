@@ -32,14 +32,15 @@ escolha (em memória ou arquivo).
 Atenção: o serviço de envio de e-mail necessita de um pequeno ajuste, pois aqui
 não é necessário enviar o PDF como anexo.
 
-### Comentários sobre os Serviços:
+## Comentários sobre os Serviços:
 
 - **EntregaDM112**: Implementação do sistema de Entrega para os pedidos.
- - Integração com o serviço PedidoDM112 para obter a lista de pedidos a serem entregues
- - Integração com o serviço PedidoDM112 para atualizar o status do pedido
- **Obs.: Acrescentados novos status na lista de ENUM (SHIPPED | DELIVERED)**
+- Integração com o serviço PedidoDM112 para obter a lista de pedidos a serem entregues
+- Integração com o serviço PedidoDM112 para atualizar o status do pedido
 
- - Integração com o serviço UtilityDM112 para envio de e-mail
+Obs.: **Acrescentados novos status na lista de ENUM (SHIPPED | DELIVERED)**
+
+- Integração com o serviço UtilityDM112 para envio de e-mail
  
 
 Projetos reaproveitados do conteúdo apresentado em aula:
@@ -53,9 +54,10 @@ Projetos reaproveitados do conteúdo apresentado em aula:
 ### Instruções para acesso
 
 **Métodos GET - Pedidos:**
-[http://localhost:9090/PedidoDM112/api/orders]
-[http://localhost:9090/PedidoDM112/api/orders/1]
-[http://localhost:9090/PedidoDM112/api/orders/customer/111.111.111-11]
+
+http://localhost:9090/PedidoDM112/api/orders
+http://localhost:9090/PedidoDM112/api/orders/1
+http://localhost:9090/PedidoDM112/api/orders/customer/111.111.111-11
 
 
 **Método POST para inserir novo Pedido:**
@@ -71,16 +73,22 @@ URL: http://localhost:9090/PedidoDM112/api/orders
 }
 ```
 
+
 **Métodos PUT para atualizações do Status:**
+
 http://localhost:9090/PedidoDM112/api/orders/1/pending
 http://localhost:9090/PedidoDM112/api/orders/1/confirmation
 http://localhost:9090/PedidoDM112/api/orders/1/shipped
 http://localhost:9090/PedidoDM112/api/orders/1/delivered
 
+
 **Métodos GET - Pagamento:**
-[http://localhost:8080/PagamentoDM112/api/startPaymentOfOrder/222.222.222-22/2]
-[http://localhost:8080/PagamentoDM112/api/confirmPaymentOfOrder/222.222.222-22/2]
+
+http://localhost:8080/PagamentoDM112/api/startPaymentOfOrder/222.222.222-22/2
+http://localhost:8080/PagamentoDM112/api/confirmPaymentOfOrder/222.222.222-22/2
+
 
 **Métodos GET - Entrega:**
-[http://localhost:6060/EntregaDM112/api/startDelivery/222.222.222-22/2]
-[http://localhost:6060/EntregaDM112/api/confirmDelivery/222.222.222-22/2]
+
+http://localhost:6060/EntregaDM112/api/startDelivery/222.222.222-22/2
+http://localhost:6060/EntregaDM112/api/confirmDelivery/222.222.222-22/2
